@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S_PURE_HOME</title>
+
+    <link rel="stylesheet" href="asset/CSS/bootstrap.css">
+    <link rel="stylesheet" href="asset/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/CSS/custom.css">
+    <link rel="stylesheet" href="asset/CSS/Media.css">
+    <link rel="stylesheet" href="asset/CSS/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="asset/CSS/lightboxed.css">
+
+
+
+    <style>
+        @font-face {
+            font-family: 'Bodoni-mt';
+            src: url('./asset/fonts/bodoni-mt/bodonimt.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Bodoni-bold';
+            src: url('./asset/fonts/bodoni-mt/bod-b.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Bodoni-regular';
+            src: url('./asset/fonts/bodoni-mt/bod-r.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Bodoni-mt-bold-i';
+            src: url('./asset/fonts/bodoni-mt/bod-i.ttf') format('truetype');
+            font-weight: bolder;
+            font-style: normal;
+        }
+
+
+        @font-face {
+            font-family: 'Certia-regular';
+            src: url('./asset/fonts/certia/Certia-Regular.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Certia-medium';
+            src: url('./asset/fonts/certia/Certia-Medium.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Certia-light';
+            src: url('./asset/fonts/certia/Certia-Light.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Certia-extrabold';
+            src: url('./asset/fonts/certia/Certia-ExtraBold.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Certia-bold';
+            src: url('./asset/fonts/certia/Certia-Bold.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Certia-black';
+            src: url('./asset/fonts/certia/Certia-Black.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+    <!-- Font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl carousel -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+</head>
+
+<body>
+
+    <header class="w-100 header z-2">
+        <div class="desk-header">
+            <div class="intro-header">
+                <div class="d-flex justify-content-between intro-head">
+                    <div class="header-icon d-flex">
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="Brochure">
+                        <a href="#" class="wp">
+                            <img src="asset/images/whatsapp.png" alt="" class="me-1">
+                        </a>
+                        <a href="Contact.html" class="contact"><i class="fa-solid fa-phone-volume"></i>&nbsp;+971 56 969 2215</a>
+                        <a href="#" role="button" type="button" class="btn broucher-btn">download Brochure</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="d-flex align-items-center">
+                    <div class="header-logo">
+                        <figure>
+                            <a href="index.html"><img src="asset/images/header-logo.png" class="w-100 h-100" alt=""></a>
+                        </figure>
+                    </div>
+                    <div class="main-menu">
+                        <div class="navbar p-0">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="About.html">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Our Products
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                        <!-- Blush submenu -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                                href="#">
+                                                Blush >>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="blush_lime_fresh.html">Blush Lime
+                                                        Fresh</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Rose Blossom Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Sea Mineral Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Jasmine Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Sandalwood</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Milk & Almond Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Lavender Soap</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- More items... -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                                href="#">
+                                                Medicure >>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Medipure Cool Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Medipure Plus Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Medipure Soft Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Medipure FRESH Soap</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="Our_brands.html" id="productsDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Brands
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                        <li><a class="dropdown-item" href="Our_brands.html">Blush</a></li>
+                                        <li><a class="dropdown-item" href="medipure_brand.html">Medipure</a></li>
+                                        <li><a class="dropdown-item" href="tuscany_brand.html">Tuscany</a></li>
+                                        <li><a class="dropdown-item" href="zapp_brand.html">Zapp</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Media</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="career.html">Career</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="private_label.html">private Label</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link cnt" href="Contact.html">Contact us &nbsp;<i class="bi bi-arrow-up-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky-header">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html" style="height: 80px; width: auto;"><img
+                                src="./asset/images/sticky-logo.svg" class="w-100 h-100" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="About.html">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Our Products
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                        <!-- Blush submenu -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                                href="#">
+                                                Blush >>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="blush_lime_fresh.html">Blush Lime
+                                                        Fresh</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Rose Blossom Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Sea Mineral Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Jasmine Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Sandalwood</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Milk & Almond Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Blush Lavender Soap</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- More items... -->
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item d-flex justify-content-between align-items-center"
+                                                href="#">
+                                                Medicure >>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Medipure Cool Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Medipure Plus Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Medipure Soft Soap</a></li>
+                                                <li><a class="dropdown-item" href="#">Medipure FRESH Soap</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="Our_brands.html" id="productsDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Brands
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                        <li><a class="dropdown-item" href="Our_brands.html">Blush</a></li>
+                                        <li><a class="dropdown-item" href="medipure_brand.html">Medipure</a></li>
+                                        <li><a class="dropdown-item" href="tuscany_brand.html">Tuscany</a></li>
+                                        <li><a class="dropdown-item" href="zapp_brand.html">Zapp</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Media</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="career.html">Career</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="private_label.html">private Label</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link cnt" href="Contact.html">Contact us &nbsp;<i class="bi bi-arrow-up-right"></i></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="mobile-header ">
+            <div class="container">
+                <div class="mobile-logo d-flex " style="justify-content: space-between;">
+                    <div class="m-logo">
+                        <img src="asset/images/mob-header-logo.webp" class="h-100 w-100" ; alt="">
+                    </div>
+                    <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                        aria-controls="staticBackdrop" style=" border: none;">
+                        <i class="fa-solid fa-bars-staggered "
+                            style="font-size: 30px; border: 1px solid black; padding: 5px 10px; border-radius: 5px;"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header p-4">
+            
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="About.html">About Us</a>
+                    </li>
+
+                  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Our Products
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+
+            <li class="dropdown-submenu">
+                <input type="checkbox" class="dropdown-toggle-check" id="blushToggle">
+                <label class="dropdown-item" for="blushToggle">Blush <span>&#187;</span></label>
+                <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item" href="blush_lime_fresh.html">Blush Lime Fresh</a></li>
+                    <li><a class="dropdown-item" href="#">Blush Rose Blossom Soap</a></li>
+                    <li><a class="dropdown-item" href="#">Blush Sea Mineral Soap</a></li>
+                    <li><a class="dropdown-item" href="#">Blush Jasmine Soap</a></li>
+                    <li><a class="dropdown-item" href="#">Blush Sandalwood</a></li>
+                    <li><a class="dropdown-item" href="#">Blush Milk & Almond Soap</a></li>
+                    <li><a class="dropdown-item" href="#">Blush Lavender Soap</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+                <input type="checkbox" class="dropdown-toggle-check" id="medicureToggle">
+                <label class="dropdown-item" for="medicureToggle">Medicure <span>&#187;</span></label>
+                <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item" href="#">Medipure Cool Soap</a></li>
+                    <li><a class="dropdown-item" href="#">Medipure Plus Soap</a></li>
+                    <li><a class="dropdown-item" href="#">Medipure Soft Soap</a></li>
+                    <li><a class="dropdown-item" href="#">Medipure Fresh Soap</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </li>
+                    <li class="nav-item dropdown" id="productsDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item ms-1" href="Our_brands.html">Blush</a></li>
+                            <li><a class="dropdown-item ms-1" href="medipure_brand.html">Madipure</a></li>
+                            <li><a class="dropdown-item ms-1" href="tuscany_brand.html">Tuscany</a></li>
+                            <li><a class="dropdown-item ms-1" href="zapp_brand.html">Zapp</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career.html">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="private_label.html">Private Label</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cnt" href="Contact.html" style="color: #ec7f1b">Contact us <span><i class="bi bi-arrow-up-right"></i></span></a>
+                    </li>
+                </ul>
+
+                <div class="download text-white d-flex">
+                    <button type="button" class="btn text-white broucher-btn w-100">DOWNLOAD BROCHURE </button>
+                </div>
+
+                <div class="social-icons align-items-center d-flex text-black mt-4">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-solid fa-x"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="Privacy common-banner">
+        <div class="container">
+            <div class="brand-heading">
+                <h1>Privacy Policy</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="privacy-info">
+        <div class="container">
+            <div class="privacy-heading">
+                <h3>Privacy Policy For S Pure</h3>
+            </div>
+
+            <div class="privacy-info">
+                <p>At S Pure, accessible from https://s-pure.com, ensuring the privacy of our visitors is a top priority
+                    for us. This Privacy Policy outlines the types of information we collect and how we utilize it. </p>
+
+                <p>Our Privacy Policy is designed to inform visitors about how we handle the information they share with
+                    us online. Please note that this policy specifically pertains to our online activities and does not
+                    cover information collected through offline means or channels other than this website. </p>
+
+                <h2><strong>CONSENT </strong></h2>
+
+                <p>By engaging with our website, you are acknowledging your consent to abide by our Privacy Policy and
+                    its terms. </p>
+
+                <h2><strong>INFORMATION WE COLLECT </strong></h2>
+
+                <p>You will be informed of the specific personal information we require and the purpose behind it will
+                    be made clear to you.  \ If you contact us directly, we may gather further details about you,
+                    including your name, email address, phone number, as well as the content of your message and any
+                    attachments you send, along with any other information you decide to share with us.  When creating
+                    an account, we may request your contact details, such as your name, company name, address, email
+                    address, and telephone number. </p>
+
+                <h2><strong>HOW WE USE YOUR INFORMATION </strong></h2>
+
+                <p>We utilize the information we gather for a variety of purposes, such as:</p>
+
+                <ul>
+                    <li> Ensuring the smooth operation and maintenance of our website.</li>
+                    <li>Enhancing and personalizing your experience on our platform. Gaining insights into how you
+                        interact with our website.</li>
+                    <li>Gaining insights into how you interact with our website.</li>
+                    <li>Innovating and introducing new products, services, and features.</li>
+                    <li>Engaging with you directly or through our partners for customer support, updates, and relevant
+                        information about the website, as well as for marketing efforts.</li>
+                    <li> Keeping you informed through emails</li>
+                    <li> Identifying and preventing fraudulent activities.</li>
+                </ul>
+
+                <h2><strong>LOG FILES </strong></h2>
+
+                <p>At S Pure, we adhere to industry-standard practices by utilizing log files. These files record the
+                    details of visitors when they access our website. This is a common practice among hosting companies
+                    and is an integral part of hosting services’ analytics. The information captured by these log files
+                    includes internet protocol (IP) addresses, browser types, Internet Service Providers (ISPs), date
+                    and time stamps, referring/exit pages, and potentially the number of clicks. It’s important to note
+                    that this data is not linked to any personally identifiable information. The primary purpose of
+                    collecting this information is to analyse trends, manage the site, monitor users’ navigation
+                    patterns, and gather demographic insights. </p>
+
+                <h2><strong>COOKIES AND WEB BEACONS </strong></h2>
+
+                <p>S Pure, like many other websites, utilizes ‘cookies’ to enhance the user experience. These cookies
+                    store information about visitors’ preferences and the pages they access. This data helps us tailor
+                    our website content to better suit the user’s browsing preferences, optimizing their overall
+                    experience. </p>
+
+                <h4><strong>Advertising Partners Privacy Policies </strong></h4>
+
+                <p>You can refer to this list to access the Privacy Policies of our advertising partners at S Pure.</p>
+
+                <p>Our website may display advertisements and links from third-party ad servers or ad networks. These
+                    entities may utilize technologies like cookies, JavaScript, or Web Beacons to deliver their
+                    respective ads. When this happens, your IP address is automatically collected. </p>
+
+                <p>These technologies serve to gauge the success of their advertising efforts and customize the
+                    advertising content you encounter on other websites. </p>
+
+                <p>Please be aware that S Pure does not have the ability to access or manage these cookies employed by
+                    third-party advertisers. </p>
+
+                <h4><strong>Third Party Privacy Policies </strong></h4>
+
+                <p>S Pure’s Privacy Policy specifically pertains to our own practices and does not extend to other
+                    advertisers or websites. We recommend reviewing the Privacy Policies of these third-party ad servers
+                    for comprehensive information on their practices and guidance on opting out of certain options. </p>
+
+                <p>If you wish, you can opt to disable cookies by adjusting your browser settings. For further guidance
+                    on managing cookies with specific web browsers, please refer to the respective browser’s official
+                    website. </p>
+
+                <h4><strong>GDPR  - General Data Protection Rights </strong></h4>
+
+                <p>We want to ensure that you are fully aware of your data protection rights. As a user, you have the
+                    following entitlements: </p>
+
+                <p><strong>THE RIGHT TO ACCESS :</strong> You can request copies of your data. Please note that a small
+                    fee may apply for this service. </p>
+
+                <p><strong>THE RIGHT TO RECTIFICATION :</strong> If you believe any information is inaccurate or
+                    incomplete, you have the right to request corrections. </p>
+
+                <p><strong>THE RIGHT TO ERASURE : </strong> Under certain conditions, you can request that we delete
+                    your data.  </p>
+
+                <p><strong>THE RIGHT TO RESTRICT PROCESSING :</strong>Under certain conditions, you can request
+                    restrictions on the processing of your data.  </p>
+
+                <p><strong> THE RIGHT TO OBJECT TO PROCESSING : </strong> Under certain conditions, you can object to
+                    how we process your data. </p>
+
+                <p><strong>THE RIGHT TO DATA PORTABILITY : </strong> Under certain conditions, you can request that we
+                    transfer the data we’ve collected to another organization or directly to you. </p>
+
+                <p>We will respond to your request within one month. If you wish to exercise any of these rights, please
+                    contact us. </p>
+
+                <h4><strong>Children’s Information </strong></h4>
+
+                <p>Ensuring the safety of children while they’re online, is a top priority for us. </p>
+                <p>We urge parents and guardians to be actively involved in overseeing and guiding their online
+                    activities. </p>
+                <p>Rest assured, S Pure does not intentionally gather any Personal Identifiable Information from
+                    children under the age of 13. If you believe that your child has inadvertently provided such
+                    information on our website, please don’t hesitate to reach out to us. </p>
+
+                <p>We are committed to promptly addressing this and taking the necessary steps to remove any such
+                    information from our records. </p>
+
+                <h4><strong>Changes to This Privacy Policy </strong></h4>
+
+                <p>We may occasionally update our Privacy Policy, so we recommend checking this page regularly for any
+                    revisions. Any changes will be promptly communicated by posting the updated Privacy Policy here. 
+                </p>
+
+                <p>These modifications will take effect immediately upon being posted. </p>
+
+                <p>If you have any questions or suggestions regarding our Privacy Policy, please feel free to get in
+                    touch with us. </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-lg-4 col-12 mt-5 mt-lg-0 order-lg-1 order-2">
+                    <div class="row">
+                        <div class="col-6 col-lg-6">
+                            <div class="footer-quick">
+                                <ul class="p-0">
+                                    <li>Quick Links</li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="About.html">About Us</a></li>
+                                    <li><a href="blush_lime_fresh.html">Products</a></li>
+                                    <li><a href="private_label.html">Private Labels &Partnership</a></li>
+                                    <li><a href="blog.html">Media</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="career.html">Career</a></li>
+                                    <li><a href="Contact.html">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" col-6 col-lg-6">
+                            <div class="footer-info">
+                                <ul class="p-0">
+                                    <li>Information</li>
+                                    <li><a href="privacy_policy.html"> Privacy Policy</a></li>
+                                    <li><a href="Disclaimer.html">Disclamier</a></li>
+                                    <li><a href="terms_condition.html">Terms $ Conditions</a></li>
+                                    <li><a href="#">Site Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 d-flex align-items-center align-start flex-column order-lg-2 order-1">
+                    <div class="f-logo">
+                        <a href="#" alt=""><img src="asset/images/footer.logo.png"></a>
+                    </div>
+                    <div class="footer-add-info text-center">
+                        <p class="mb-0">PO Box 61061, RA08 JAFZA <br> CA05-06 Dubai UAE </p>
+                        <div class="foot-con d-flex flex-column">
+                            <a href="#" class="text-decoration-none">+971 56 969 2215</a>
+                            <a href="#" class="text-decoration-none">+971 45 548 127</a>
+                        </div>
+                        <div class="sales">
+                            <a href="#" class="text-decoration-none">sales@s-pure.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-social-icons d-flex">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="footer-btn">
+                        <a href="#" role="button" type="button" class="btn brown-btn">download Brochure</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 order-3 mt-5 mt-lg-0">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="footer-brands">
+                                <ul class="p-0">
+                                    <li>Brands</li>
+                                    <li><a href="Our_brands.html">Blush</a></li>
+                                    <li><a href="medipure_brand.html">Medipure</a></li>
+                                    <li><a href="zapp_brand.html">Zapp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-range">
+                                <ul class="p-0">
+                                    <li>Product Range</li>
+                                    <li><a href="#">Body Care</a></li>
+                                    <li><a href="#">Skine Care</a></li>
+                                    <li><a href="#">Lip Care</a></li>
+                                    <li><a href="#">Home Care</a></li>
+                                    <li><a href="#">Hand Care</a></li>
+                                    <li><a href="#">Hair Care</a></li>
+                                    <li><a href="#">Face Care</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 ">
+        <div class="footer-last d-flex d-lg-block">
+            <div class="row">
+                <div class="col-lg-7 col-12 d-flex f-right justify-content-end align-items-center f-last">
+                    <p class="text-lg-end text-center mb-0">© 2024-25 S-PURE. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-5 col-12 p-3">
+                    <div class="company-logo d-flex justify-content-end align-items-center f-last">
+                        Powered by :
+                        <a href="#"><img src="asset/images/svipl_logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="asset/JS/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="asset/JS/jquery-3.5.1.slim.min.js"></script>
+    <script src="asset/JS/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="asset/JS/jquery.fancybox.min.js"></script>
+    <script src="asset/JS/lightboxed.js"></script>
+
+    <script>
+        $('.hero-slider').owlCarousel({
+            margin: 10,
+            loop: true,
+            autoWidth: true,
+            items: 4,
+            autoplay: true,
+            nav: false,
+            dots: false
+        })
+
+        $('.owl-review-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+
+
+        $(document).ready(function () {
+            var owl = $('.review-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+
+            // Custom Prev/Next
+            $('.review-slide-btn .owl-prev').click(function () {
+                owl.trigger('prev.owl.carousel');
+            });
+
+            $('.review-slide-btn .owl-next').click(function () {
+                owl.trigger('next.owl.carousel');
+            });
+        });
+
+
+        window.addEventListener("scroll", function () {
+            const stickyHeader = document.querySelector(".sticky-header");
+
+            if (window.scrollY > 300) {
+                stickyHeader.classList.add("visible");
+            } else {
+                stickyHeader.classList.remove("visible");
+            }
+        });
+
+
+         //dropdown Menu
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const submenuToggles = document.querySelectorAll('.dropdown-submenu > .dropdown-item');
+
+            submenuToggles.forEach(toggle => {
+                toggle.addEventListener('click', function (e) {
+                    const submenu = this.nextElementSibling;
+                    submenu.classList.toggle('show');
+                    e.stopPropagation(); // Prevent the event from bubbling up
+                });
+            });
+
+            // Close submenu when clicking outside
+            document.addEventListener('click', function (e) {
+                const openSubmenus = document.querySelectorAll('.submenu.show');
+                openSubmenus.forEach(submenu => {
+                    if (!submenu.contains(e.target)) {
+                        submenu.classList.remove('show');
+                    }
+                });
+            });
+        });
+
+
+
+    </Script>
+
+</body>
+
+</html>
